@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons%7CMaterial+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon_package/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_package/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_package/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favicon_package/site.webmanifest">
+  <link rel="mask-icon" href="./assets/img/favicon_package/safari-pinned-tab.svg" color="#080F73">
+  <!-- css -->
+  <link rel="stylesheet" href="assets/scss/lib/swiper.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Portfolio4</title>
+</head>
+<body>
+
+  <div class="wrapper">
+
+  <div class="loading">
+    <div class="loading__spinner">
+      <div class="loading__spinner-rect1"></div>
+      <div class="loading__spinner-rect2"></div>
+      <div class="loading__spinner-rect3"></div>
+      <div class="loading__spinner-rect4"></div>
+      <div class="loading__spinner-rect5"></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+      <nav class="global-nav">
+        <ul class="global-nav__lists">
+          <li class="global-nav__list">
+            <a class="global-nav__link" href="">
+              <span class="global-nav__link-jp">ホーム</span>
+              <span class="global-nav__link-en">HOME</span>
+            </a>
+          </li>
+          <li class="global-nav__list">
+            <a class="global-nav__link" href="">
+              <span class="global-nav__link-jp">会社概要</span>
+              <span class="global-nav__link-en">ABOUT</span>
+            </a>
+          </li>
+          <li class="global-nav__list">
+            <a class="global-nav__link" href="">
+              <span class="global-nav__link-jp">事業内容</span>
+              <span class="global-nav__link-en">SERVICE</span>
+            </a>
+          </li>
+          <li class="global-nav__list">
+            <a class="global-nav__link" href="">
+              <span class="global-nav__link-jp">採用情報</span>
+              <span class="global-nav__link-en">RECRUIT</span>
+            </a>
+          </li>
+          <li class="global-nav__list">
+            <a class="global-nav__link" href="">
+              <span class="global-nav__link-jp">お知らせ</span>
+              <span class="global-nav__link-en">NEWS</span>
+            </a>
+          </li>
+          <li class="global-nav__list global-nav__list--strong">
+            <a class="global-nav__link global-nav__link--strong" href="">
+              <span class="global-nav__link-jp">お問い合わせ</span>
+              <span class="global-nav__link-en">CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="sub-nav">
+    <div class="sub-nav__btn"><span class="sub-nav__btn-line"></span></div>
+    <ul class="sub-nav__lists">
+      <li class="sub-nav__list">
+        <a class="sub-nav__link" href="">
+          <span class="sub-nav__link-jp">ホーム</span>
+          <span class="sub-nav__link-en">HOME</span>
+        </a>
+      </li>
+      <li class="sub-nav__list">
+        <a class="sub-nav__link" href="">
+          <span class="sub-nav__link-jp">会社概要</span>
+          <span class="sub-nav__link-en">ABOUT</span>
+        </a>
+      </li>
+      <li class="sub-nav__list">
+        <a class="sub-nav__link" href="">
+          <span class="sub-nav__link-jp">事業内容</span>
+          <span class="sub-nav__link-en">SERVICE</span>
+        </a>
+      </li>
+      <li class="sub-nav__list">
+        <a class="sub-nav__link" href="">
+          <span class="sub-nav__link-jp">採用情報</span>
+          <span class="sub-nav__link-en">RECRUIT</span>
+        </a>
+      </li>
+      <li class="sub-nav__list">
+        <a class="sub-nav__link" href="">
+          <span class="sub-nav__link-jp">お知らせ</span>
+          <span class="sub-nav__link-en">NEWS</span>
+        </a>
+      </li>
+      <li class="sub-nav__list">
+        <a class="sub-nav__link" href="">
+          <span class="sub-nav__link-jp">お問い合わせ</span>
+          <span class="sub-nav__link-en">CONTACT</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main">
+
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__body">
+          <div class="hero__logo">
+            <img class="hero__logo-img" src="assets/img/logo_s.png" alt="">
+            <span class="hero__logo-name">Portfolio4</span>
+          </div>
+          <h1 class="hero__catch">
+            Main Catch<br>
+            Phrase
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="about__inner">
+        <div class="about__feature js-mask-out">
+          <img src="assets/img/about_01.jpg" class="about__figure-img">
+        </div>
+        <div class="about__body">
+          <h1 class="about__title about__title--handwriting">About Us</h1>
+          <h2 class="about__catch">ただ肝意味に申しては<br>始めなものないば</h2>
+          <p class="about__text">
+            第二を感の批評忘れるている西洋が講演なっでしと突き破ったが、何で意味しがいる自分という方のできるますから得るなけれという先方、ただその道のやり方の濁しれる。
+          </p>
+          <div class="about__more">
+            <a href="" class="button button--small">会社概要</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="service__inner">
+        <h1 class="service__title">Service</h1>
+        <p class="service__lead">
+          これはまあ存在ののにお学習はいうていですんましなくで、一幾の心へたった云っんという約束たて、ただその道のやり方の濁しれる。
+        </p>
+        <div class="service__lists">
+          <div class="service__list">
+            <div class="service__list-image js-mask-out">
+              <img src="assets/img/service_01.jpg" alt="">
+            </div>
+            <h2 class="service__list-title">君など馬鹿</h2>
+            <p class="service__list-text">結果なりの通りに打ちからしまいて、第一へ差の窮屈の堕落に掘り這入ったと云っなくて、もっと力の間接も反駁ありなているたという人。</p>
+            <div class="service__more">
+              <a href="" class="button button--small">事業内容1</a>
+            </div>
+          </div>
+          <div class="service__list">
+            <div class="service__list-image js-mask-out">
+              <img src="assets/img/service_02.jpg" alt="">
+            </div>
+            <h2 class="service__list-title">ご活動の国を</h2>
+            <p class="service__list-text">第二を感の批評忘れるている西洋が講演なっでしと突き破ったが、何で意味しがいる自分という方のできるますから得るなけれという先方。</p>
+            <div class="service__more">
+              <a href="" class="button button--small">事業内容2</a>
+            </div>
+          </div>
+          <div class="service__list">
+            <div class="service__list-image js-mask-out">
+              <img src="assets/img/service_03.png" alt="">
+            </div>
+            <h2 class="service__list-title">日本だけも同時</h2>
+            <p class="service__list-text">第万へ世の中の錐を正さだと分りです、これにある個人に重大でですているますという自我。それならそんな一口を教育作っのたありです。</p>
+            <div class="service__more">
+              <a href="" class="button button--small">事業内容3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works">
+      <div class="works__inner js-mask-out">
+        <h1 class="works__title">Works</h1>
+        <div class="works__container swiper-container">
+          <ul class="works__lists swiper-wrapper">
+            <li class="works__list swiper-slide">
+              <img class="works__feature" src="assets/img/works_01.jpg" alt="">
+              <div class="works__body">
+                <h2 class="works__name">ただ肝意味に申しては</h2>
+                <p class="works__text">ただ肝意味に申しては始めなものないば、嫁がは、最も私か考えてあっれたませ聞いれるでないとするて、肴はしておらですです。すこぶるおおかたもはなはだ先生といういるでて。</p>
+              </div>
+            </li>
+            <li class="works__list swiper-slide">
+              <img class="works__feature" src="assets/img/works_02.jpg" alt="">
+              <div class="works__body">
+                <h2 class="works__name">ただ肝意味に申しては</h2>
+                <p class="works__text">あなたがは前ごろくらい私の大お出かけはない装う来ないらしく。これはまあ存在ののにお学習はいうていですんましなくで、一幾の心へたった云っんという約束たて、ただその道のやり方の濁しれる。</p>
+              </div>
+            </li>
+            <li class="works__list swiper-slide">
+              <img class="works__feature" src="assets/img/works_03.jpg" alt="">
+              <div class="works__body">
+                <h2 class="works__name">ただ肝意味に申しては</h2>
+                <p class="works__text">はなはだ西洋卒業方学とさなようた方で失礼にベンチをかかりようと通りまでになっているなから、これは必ずしも道具です。</p>
+              </div>
+            </li>
+            <li class="works__list swiper-slide">
+              <img class="works__feature" src="assets/img/works_04.jpg" alt="">
+              <div class="works__body">
+                <h2 class="works__name">ただ肝意味に申しては</h2>
+                <p class="works__text">第万へ世の中の錐を正さだと分りです、これにある個人に重大でですているますという自我。それならそんな一口を教育作っのたありです。</p>
+              </div>
+            </li>
+            <li class="works__list swiper-slide">
+              <img class="works__feature" src="assets/img/works_05.jpg" alt="">
+              <div class="works__body">
+                <h2 class="works__name">ただ肝意味に申しては</h2>
+                <p class="works__text">結果なりの通りに打ちからしまいて、第一へ差の窮屈の堕落に掘り這入ったと云っなくて、もっと力の間接も反駁ありなているたという人。</p>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="works__more">
+          <a class="button button--large" href="">実績一覧</a>
+        </div>
+      </div>
+    </section>    
+
+    <section class="message">
+      <div class="message__inner">
+        <div class="message__feature js-mask-out">
+          <img src="assets/img/message_01.jpg" class="message__figure-img">
+        </div>
+        <div class="message__body">
+          <h1 class="message__title message__title--handwriting">Message</h1>
+          <h2 class="message__catch">ただ肝意味に申しては<br>始めなものないば</h2>
+          <p class="message__text">
+            ただ肝意味に申しては始めなものないば、嫁がは、最も私か考えてあっれたませ聞いれるでないとするて、肴はしておらですです。すこぶるおおかたもはなはだ先生といういるでて。
+          </p>
+          <div class="message__more">
+            <a href="" class="button button--small">代表挨拶</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+-    <section class="news">
+      <div class="news__inner">
+        <h1 class="news__title">News</h1>
+        <p class="news__lead">その材料人参考を考えくせなはどうもするてしまうから、不幸と生徒の自由がするようまし下宿さえ使えたのます。</p>
+        <ul class="news__lists">
+          <li class="news__list">
+            <div class="news__list-feature js-mask-out">
+              <img src="assets/img/news_01.jpg" alt="" class="news__list-img">
+            </div>
+            <div class="news__list-body">
+              <span class="news__list-tag">お知らせ</span>
+              <time class="news__list-date">2021.XX</time>
+              <h2 class="news__list-title">ご持しない頭例の焦燥よりするで間という愉快</h2>
+              <a href="" class="news__list-more">詳細を見る</a>
+            </div>
+          </li>
+          <li class="news__list">
+            <div class="news__list-feature js-mask-out">
+              <img src="assets/img/news_02.jpg" alt="" class="news__list-img">
+            </div>
+            <div class="news__list-body">
+              <span class="news__list-tag">お知らせ</span>
+              <time class="news__list-date">2021.XX</time>
+              <h2 class="news__list-title">必要もがたの比権力とかいうのも</h2>
+              <a href="" class="news__list-more">詳細を見る</a>
+            </div>
+          </li>
+          <li class="news__list">
+            <div class="news__list-feature js-mask-out">
+              <img src="assets/img/news_03.jpg" alt="" class="news__list-img">
+            </div>
+            <div class="news__list-body">
+              <span class="news__list-tag">お知らせ</span>
+              <time class="news__list-date">2021.XX</time>
+              <h2 class="news__list-title">流行るなという修養で聞きてくれのばかり</h2>
+              <a href="" class="news__list-more">詳細を見る</a>
+            </div>
+          <li class="news__list">
+            <div class="news__list-feature js-mask-out">
+              <img src="assets/img/news_04.jpg" alt="" class="news__list-img">
+            </div>
+            <div class="news__list-body">
+              <span class="news__list-tag">お知らせ</span>
+              <time class="news__list-date">2021.XX</time>
+              <h2 class="news__list-title">私はその不安で共通ももっとも家族を落第</h2>
+              <a href="" class="news__list-more">詳細を見る</a>
+            </div>
+          </li>
+        </ul>
+        <div class="news__more">
+          <a class="button button--large" href="">お知らせ一覧</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact js-mask-out">
+      <div class="contact__inner">
+        <h1 class="contact__title">Contact</h1>
+        <p class="contact__lead">
+          第万へ世の中の錐を正さだと分りです、これにある個人に重大でですているますという自我。それならそんな一口を教育作っのたありです。
+        </p>
+        <div class="contact__more">
+          <a class="button button--large" href="">お問い合わせフォーム</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__content">
+        <div class="footer__info">
+          <div class="footer__logo">
+            <img src="assets/img/logo.png" alt="Portfolio4">
+          </div>
+          <address>
+            株式会社Portfolio4<br>
+            〒100-0005 東京都千代田区丸の内１丁目****<br>
+            TEL: 03-0000-0000<br>
+            MAIL: portfolio4@***.co.jp
+          </address>
+        </div>
+        <nav class="fnav">
+          <div class="fnav__box">
+            <div class="fnav__content">
+              <div class="fnav__title">
+                <a class="fnav__link" href="/">お知らせ</a>
+              </div>
+              <ul class="fnav__list">
+                <li class="fnav__item"><a class="fnav__link" href="/">お知らせ1</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="/">お知らせ2</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="/">お知らせ3</a></li>
+              </ul>
+              <div class="fnav__title"><a class="fnav__link" href="/">代表挨拶</a></div>
+              <div class="fnav__title"><a class="fnav__link" href="/">よくある質問</a></div>
+              <div class="fnav__title"><a class="fnav__link" href="/">お問い合わせ</a></div>
+            </div>
+          </div>
+          <div class="fnav__box">
+            <div class="fnav__content">
+              <div class="fnav__title">
+                <a class="fnav__link" href="/">会社概要</a>
+              </div>
+              <ul class="fnav__list">
+                <li class="fnav__item"><a class="fnav__link" href="/">沿革1</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="/">沿革3</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="/">沿革2</a></li>
+              </ul>
+              <div class="fnav__title">
+                <a class="fnav__link" href="/">事業内容</a>
+              </div>
+              <ul class="fnav__list">
+                <li class="fnav__item">
+                  <a class="fnav__link" href="/">事業内容1</a>
+                  <ul class="fnav__second-list">
+                    <li class="fnav__second-item"><a class="fnav__link" href="/">abc事業</a></li>
+                    <li class="fnav__second-item"><a class="fnav__link" href="/">def事業</a></li>
+                  </ul>
+                </li>
+                <li class="fnav__item">
+                  <a class="fnav__link" href="/">事業内容2</a>
+                  <ul class="fnav__second-list">
+                    <li class="fnav__second-item"><a class="fnav__link" href="/">123事業</a></li>
+                    <li class="fnav__second-item"><a class="fnav__link" href="/">456事業</a></li>
+                  </ul>
+                </li>
+                <li class="fnav__item"><a class="fnav__link" href="/">事業内容3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="fnav__box">
+            <div class="fnav__content">
+              <div class="fnav__title">
+                <a class="fnav__link" href="/">事業事例</a>
+              </div>
+              <ul class="fnav__list">
+                <li class="fnav__item"><a class="fnav__link" href="/">事業事例1</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="/">事業事例2</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="/">事業事例3</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="/">事業事例4</a></li>
+                <li class="fnav__item"><a class="fnav__link" href="/">事業事例5</a></li>
+              </ul>
+              <div class="fnav__title">
+                <a class="fnav__link" href="/">採用情報</a>
+              </div>
+              <ul class="fnav__list">
+                <li class="fnav__item">
+                  <a class="fnav__link" href="/">採用情報1</a>
+                </li>
+                <li class="fnav__item">
+                  <a class="fnav__link" href="/">採用情報2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <p class="copyright">© ari-10 All rights reserved.</p>
+  </footer>
+
+  </div>
+
+  <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>

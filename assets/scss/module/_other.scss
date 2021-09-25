@@ -1,0 +1,37 @@
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  padding: 1.6rem 0;
+  background-color: rgba(0,0,0,0.1);
+}
+
+
+.js-mask-out {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color_base;
+    z-index: 5;
+    transform: translateX(0%);
+    transition: 
+      transform 0.6s ease,
+      visibility 0s ease 0.6s;
+  }
+
+  &--done {
+
+    &:before {
+      transform: translateX(100%);
+      visibility: hidden;
+    }
+  }
+}
+

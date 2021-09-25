@@ -1,0 +1,70 @@
+.works {
+  margin-bottom: 8rem;
+  position: relative;
+
+  &__inner {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 4rem;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  
+  &__lead {
+    max-width: 56rem;
+    margin: 0 auto 3rem;
+    text-align: center;
+  }
+
+  &__lists {
+    counter-reset: number;
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: $color_gray;
+
+    &:nth-child(even) {
+      background-color: darken($color_gray, 3%);
+    }
+
+    &:hover {
+      transition: all 0.5s ease;
+      background-color: $color_base;
+      color: #fff;
+    }
+  }
+
+  &__body {
+    padding: 8%;
+    counter-increment: number;
+
+    &::before {
+      content: "0" counter(number);
+      display: block;
+      margin-bottom: 2rem;
+      font-family: $font-family-en;
+      font-size: 2rem;
+      line-height: 1;
+      font-weight: bold;
+    }
+  }
+
+  &__name {
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__more {
+    margin-top: 8rem;
+  }
+}

@@ -1,0 +1,63 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.25rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+  z-index: 2;
+  cursor: pointer;
+  background-color: $color_base;
+  color: #fff;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    z-index: -1;
+  }
+
+  &::before {
+    background-color: $color_base-light;
+  }
+
+  &--small {
+    width: 20rem;
+    height: 6rem;
+  }
+
+  &--medium {
+    width: 40rem;
+    height: 8rem;
+  }
+
+  &--large {
+    width: 60rem;
+    height: 10rem;
+
+    @include breakPoint_tw {
+      width: 40rem;
+      height: 8rem;
+    }
+
+    @include breakPoint_th {
+      width: 20rem;
+      height: 6rem;
+    }
+  }
+  
+  &:hover {
+
+    &::before {
+      transform: translateX(0%);
+    }
+  }
+}
+

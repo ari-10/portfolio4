@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+	line-height: 2;
+	font-size: $font-size_base;
+	color: $color_black;
+  font-family: $font-family_base;
+  background-color: #fff;
+	font-feature-settings: "palt" 1;
+	letter-spacing: 0.05rem;
+
+	@include breakPoint_tw {
+		font-size: calc(#{$font-size_base} * 0.94);
+	}
+
+	@include breakPoint_th {
+		font-size: calc(#{$font-size_base} * 0.88);
+	}
+
+	@include breakPoint_sp {
+		font-size: calc(#{$font-size_base} * 0.82);
+	}
+}
+
+i {
+  font-family: $font-family_icon;
+}
+
+a {
+	text-decoration: none;
+	color: $color_black;
+}
+
+ul,ol,li {
+	margin: 0;
+	padding: 0;
+  list-style: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1.5;
+	font-feature-settings: "palt" 1;
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}

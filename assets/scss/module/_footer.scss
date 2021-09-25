@@ -1,0 +1,29 @@
+.footer {
+  background-color: #222;
+
+  &__inner {
+    @include flex-container(column);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include breakPoint_th {
+      flex-flow: column;
+    }
+  }
+
+  &__info {
+    color: #fff;
+    margin: 3rem 0;
+    font-size: 1.3rem;
+    flex-basis: 40%;
+  }
+
+  &__logo {
+    width: 24rem;
+    margin-bottom: 3rem;
+  }
+}

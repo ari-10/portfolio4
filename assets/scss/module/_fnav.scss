@@ -1,0 +1,77 @@
+.fnav {
+  display: flex;
+  flex-flow: wrap;
+  flex: 1;
+  padding: 4rem 0;
+
+  &__box {
+    display: block;
+    width: calc(100% / 3);
+
+    @include breakPoint_sp {
+      width: calc(100% / 2);
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__link {
+    color: #ccc;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color_base-light;
+    }
+
+  }
+
+  &__title {
+    display: block;
+    margin: 3rem 0 0.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ccc;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    + .fnav__title {
+      margin-top: 1rem;
+    }
+  }
+
+  &__list {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  
+  &__item {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 2;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  
+  &__second-list {
+    margin: 0 0 0 2em;
+  }
+  
+  &__second-item {
+    position: relative;
+  
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: -1rem;
+      content: "";
+      display: block;
+      width: 4px;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+}

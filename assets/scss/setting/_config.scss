@@ -1,0 +1,30 @@
+
+// font-family
+$font-size_base: 1.6rem;
+$font-family-en: "Open Sans";
+$font-family_icon: $font-family_en, "material icons", "material icons outlined";
+$font-family_base: "游ゴシック", "ヒラギノ角ゴ ProN W3", "メイリオ", "ＭＳ Ｐゴシック", sans-serif, $font-family_icon;
+$font-family_serif-ja: "yu mincho", serif;
+$font-family_handwriting-en: "Caveat";
+
+// color
+$color_black: #333;
+$color_base: #2b6db3;
+$color_base-light: lighten($color_base, 10%);
+$color_sub: #e1d0b5;
+$color_gray: #f4f4f4;
+
+// body-width
+$container: 1180px;
+
+// breakpoint
+$breakPoint_pc: $container;
+$breakPoint_tw: 1024px;
+$breakPoint_th: 768px;
+$breakPoint_sp: 480px;
+
+
+// rate
+$rate_tw: $breakPoint_tw / $container;
+$rate_th: $breakPoint_th / $container;
+$rate_sp: $breakPoint_sp / $container;

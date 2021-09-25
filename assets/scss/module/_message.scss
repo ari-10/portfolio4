@@ -1,0 +1,66 @@
+.message {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8rem;
+  padding: 8rem 0;
+  background-image: linear-gradient(90deg, $color_sub 85%, transparent 85%);
+  position: relative;
+
+  &__inner {
+    @include flex-container(row-reverse);
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakPoint_th {
+      flex-flow: column;
+    }
+  }
+  
+  &__feature {
+    display: flex;
+    flex-basis: 60%;
+
+    @include breakPoint_th {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 35%;
+
+    @include breakPoint_th {
+      text-align: center;
+      align-items: center;
+      max-width: 40rem
+    }
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 4rem;
+  }
+
+  &__catch {
+    $font-size: 3.2rem;
+    $letter-spacing: 0.1rem;
+    letter-spacing: $letter-spacing;
+    font-size: $font-size;
+    text-shadow: 0 0 1px #333;
+    font-family: $font-family_serif-ja;
+    margin-bottom: 2rem;
+
+    @include breakPoint_tw {
+      font-size: 2.4rem;
+    }
+
+    @include breakPoint_sp {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 4rem;
+  }
+}

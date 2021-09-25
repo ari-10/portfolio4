@@ -1,0 +1,28 @@
+.swiper-button-prev,
+.swiper-button-next {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #fff;
+  background-color: $color_base;
+}
+
+.swiper-button-prev::before,
+.swiper-button-next::before {
+  font-size: 3.6rem;
+  line-height: 1;
+  cursor: pointer;
+  padding-top: 6px;
+}
+
+.swiper-button-prev::before {
+  content: "\e408";
+}
+
+.swiper-button-next::before {
+  content: "\e409";
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}

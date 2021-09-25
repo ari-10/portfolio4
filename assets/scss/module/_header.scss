@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  z-index: 8;
+  transition: all 0.5s ease;
+  font-feature-settings: "palt" 1;
+  width: 100%;
+  padding: 0 2rem;
+
+  &--active {
+    top: 0;
+
+    .header__inner {
+      height: 6rem;
+    }
+  }
+
+  @include breakPoint-th {
+    display: none;
+  }
+
+  &__inner {
+    max-width: $container;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 5px 5px 24px rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  &__logo  {
+    display: flex;
+    align-items: center;
+    flex-basis: 20rem;
+    padding-right: 3rem;
+  }
+}
