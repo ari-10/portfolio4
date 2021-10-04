@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+	height: 100%;
 }
 
 body {
@@ -12,8 +13,7 @@ body {
 	color: $color_black;
   font-family: $font-family_base;
   background-color: #fff;
-	font-feature-settings: "palt" 1;
-	letter-spacing: 0.05rem;
+	height: 100%;
 
 	@include breakPoint_tw {
 		font-size: calc(#{$font-size_base} * 0.94);

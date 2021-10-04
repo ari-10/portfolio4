@@ -327,6 +327,7 @@ figure {
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
@@ -335,9 +336,7 @@ body {
   color: #333;
   font-family: "游ゴシック", "ヒラギノ角ゴ ProN W3", "メイリオ", "ＭＳ Ｐゴシック", sans-serif, "Open Sans", "material icons", "material icons outlined";
   background-color: #fff;
-  -webkit-font-feature-settings: "palt" 1;
-          font-feature-settings: "palt" 1;
-  letter-spacing: 0.05rem;
+  height: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -1916,7 +1915,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 999;
   background-color: #2b6db3;
   display: -webkit-box;
